@@ -22,7 +22,4 @@
 
 ## DOCUMENTATION
 
-- [M_ncurses](html/ncurses_from_Fortran.html)  -- An overview of the M_ncurses module
-
-
-- [M_ncurses](https://urbanjost.github.io/M_ncurses/)  -- An overview of the M_ncurses module
+- [M_ncurses](https://urbanjost.github.io/M_ncurses/ncurses_from_Fortran.html)  -- An overview of the M_ncurses module
