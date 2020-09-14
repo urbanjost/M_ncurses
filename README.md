@@ -1,6 +1,6 @@
 # M_ncurses.f90 and associated files
 
-![example](html/images/example.gif)
+![example](images/example.gif)
 
 ## NAME
 
