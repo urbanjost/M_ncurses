@@ -1,0 +1,33 @@
+  Some Notes of Caution
+
+   If  you  find yourself thinking you need to use noraw() or nocbreak(),
+   think  again  and  move  carefully. It's probably better design to use
+   getstr()  or one of its relatives to simulate cooked mode. The noraw()
+   and  nocbreak() functions try to restore cooked mode, but they may end
+   up   clobbering   some  control  bits  set  before  you  started  your
+   application.  Also,  they  have always been poorly documented, and are
+   likely   to  hurt  your  application's  usability  with  other  curses
+   libraries.
+
+   Bear  in  mind that refresh() is a synonym for wrefresh(stdscr). Don't
+   try  to  mix use of stdscr with use of windows declared by newwin(); a
+   refresh()  call will blow them off the screen. The right way to handle
+   this  is  to  use  subwin(),  or not touch stdscr at all and tile your
+   screen  with  declared windows which you then wnoutrefresh() somewhere
+   in  your  program event loop, with a single doupdate() call to trigger
+   actual repainting.
+
+   You  are  much  less  likely  to  run into problems if you design your
+   screen   layouts   to  use  tiled  rather  than  overlapping  windows.
+   Historically,  curses  support  for overlapping windows has been weak,
+   fragile,  and  poorly  documented.  The  ncurses library is not yet an
+   exception to this rule.
+
+   There  is  a  panels library included in the ncurses distribution that
+   does  a  pretty  good  job  of  strengthening  the overlapping-windows
+   facilities.
+
+   Try to avoid using the global variables LINES and COLS. Use getmaxyx()
+   on  the stdscr context instead. Reason: your code may be ported to run
+   in  an  environment with window resizes, in which case several screens
+   could be open with different sizes.

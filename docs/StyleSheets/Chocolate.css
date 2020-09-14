@@ -1,0 +1,53 @@
+body {xfont-style: italic }
+body { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:1.8em; line-height:2.0em; }
+body	{	
+	color:	green;
+	background:	#8B4513;
+	}	
+/*
+chocolate            82%  41%  11% #D2691E 210 105  30
+chocolate1          100%  49%  14% #FF7F24 255 127  36
+chocolate2           93%  46%  12% #EE7621 238 118  33
+chocolate3           80%  40%  11% #CD661D 205 102  29
+chocolate4           54%  27%   7% #8B4513 139  69  19
+*/
+
+p {font-family: "Lucida Console", Monaco, monospace }
+
+h1,h2,h3,h4,h5,h6 { color:yellow; font-family:georgia, verdana, sans-serif; }
+h1 { font-size:130%; page-break-before:always;background-color: #841 }
+h2 { font-size:143%;color:white; }
+h3 { font-size:134%; }
+h4 { font-size:120%; }
+h5,h6 { font-size:100% }
+
+table { border-collapse:collapse; }
+td { padding-left:1em; }
+td { padding-right:1em; }
+th { padding:1em; background-color: #FF7F24; border:double #007 }
+
+dt { font-size: 120%;font-weight: boldest; }
+dt { margin-top: 1.5em; margin-bottom: .75em; }
+dt { font-family:georgia, verdana, sans-serif; }
+dt { color:#EE7621; }
+
+li { margin-bottom:0.5em; }
+blockquote { display:block; font-size:120%; font-style:italic; line-height:1.5em; margin:0 0 1.5em; padding:0 2.5em; }
+pre { background-color:#8B4513; color:white; font-size:90%; overflow:auto; padding:1em; }
+
+a:visited { color:#666; }
+a.nav,a:link.nav, a:visited.nav { background-color:#FFF; color:#000; }
+a,li span { color:#000; }
+a:hover, a.nav:hover, a:hover math { background-color:#000; color:#FFF; }
+a.existingWikiWord[title]{ //border: 1px dashed #BBB; }
+
+#Container { margin:0 10px; text-align:center; }
+#Content { border-top:none; margin:auto; padding:0.3em; text-align:left; width:100%; max-width:55em; background:#FF7F24}
+span.webName { font-size:100%; }
+textarea#content { font-size: 100%; line-height: 120%; }
+h1#pageName { line-height:1em; margin:0.2em 0 0.2em 0; padding:0; }
+
+.property { color:green; font-size:100%; }
+.byline { color:#yellow; font-size:.8em; font-style:italic; margin-bottom:1em; padding-top:1px; }
+
+
