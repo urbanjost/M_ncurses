@@ -47,14 +47,37 @@ SRCS =  M_ncurses.f90 macros.c nc_errmessage.f90 nc_printhtml.f90 nc_printplain.
 OBJS =  M_ncurses.o macros.o nc_errmessage.o nc_printhtml.o nc_printplain.o 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # platform-specific values you will probably change
+# 
 LIBS := -lncurses 
 CC := cc
 CFLAGS := -O
 FC := gfortran
 FFLAGS := -O
-F90 := gfortran
-F90FLAGS := -O
 LDFLAGS := 
+# 
+# You can either ignore it, or disable the "may be used uninitialized"
+# warnings with -Wno-maybe-uninitialized or compile with optimizations
+# (-O1 and more).
+gfortran: F90=gfortran
+gfortran: F90FLAGS := -g -O -Wall -std=f2018 -Wextra -Wno-maybe-uninitialized -Wno-uninitialized
+gfortran: all
+	@echo built with $(F90)
+
+nvfortran: F90=nvfortran
+nvfortran: F90FLAGS := -Minform=inform -Mbackslash -traceback
+nvfortran: all
+	@echo built with $(F90)
+
+ifort: F90=ifort
+ifort: F90FLAGS := -warn all -traceback
+ifort: all
+	@echo built with $(F90)
+
+nagfor: F90=nagfor
+nagfor: F90FLAGS := -C all
+nagfor: all
+	@echo built with $(F90)
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 all: $(PROG) $(CPROG)
 	: 'That is all Folks!'
