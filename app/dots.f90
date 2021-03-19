@@ -15,7 +15,7 @@ use M_ncurses, nc_move=>move
     if (has_colors()) then
         ierr=start_color()
         call getcolor(COLORS,COLOR_PAIRS)
-	COLORS=min(8,COLORS)  !! this code does not define color pairs so keep to 8
+        COLORS=min(8,COLORS)  !! this code does not define color pairs so keep to 8
         do fg=0,COLORS-1
             do bg=0,COLORS-1
                 pair = mypair(fg, bg)
