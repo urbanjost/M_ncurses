@@ -4,36 +4,36 @@ NULL=
 PROGFILES = \
  ../test/dots.f90 \
  ../test/testcurses.f90 \
- ../test/EXAMPLES/nc_acs_vars.f90 \
- ../test/EXAMPLES/nc_colo.f90 \
- ../test/EXAMPLES/nc_color_set.f90 \
- ../test/EXAMPLES/nc_colour.f90 \
- ../test/EXAMPLES/nc_events.f90 \
- ../test/EXAMPLES/nc_exp1.f90 \
- ../test/EXAMPLES/nc_getwin.f90 \
- ../test/EXAMPLES/nc_hello_world_allkeys.f90 \
- ../test/EXAMPLES/nc_hello_world.f90 \
- ../test/EXAMPLES/nc_hline.f90 \
- ../test/EXAMPLES/nc_init_func_example.f90 \
- ../test/EXAMPLES/nc_key_code.f90 \
- ../test/EXAMPLES/nc_marquee.f90 \
- ../test/EXAMPLES/nc_mouse.f90 \
- ../test/EXAMPLES/nc_printw_example.f90 \
- ../test/EXAMPLES/nc_putwin.f90 \
- ../test/EXAMPLES/nc_scanw_example.f90 \
- ../test/EXAMPLES/nc_scanw.f90 \
- ../test/EXAMPLES/nc_scr_restore.f90 \
- ../test/EXAMPLES/nc_simple_attr.f90 \
- ../test/EXAMPLES/nc_simple_color.f90 \
- ../test/EXAMPLES/nc_simple_key.f90 \
- ../test/EXAMPLES/nc_temp_leave.f90 \
- ../test/EXAMPLES/nc_termattrs.f90 \
- ../test/EXAMPLES/nc_termname.f90 \
- ../test/EXAMPLES/nc_use_default_colors.f90 \
- ../test/EXAMPLES/nc_vline.f90 \
- ../test/EXAMPLES/nc_wenclose.f90 \
- ../test/EXAMPLES/nc_win_border.f90 \
- ../test/EXAMPLES/nc_with_chgat.f90 \
+ ../example/nc_acs_vars.f90 \
+ ../example/nc_colo.f90 \
+ ../example/nc_color_set.f90 \
+ ../example/nc_colour.f90 \
+ ../example/nc_events.f90 \
+ ../example/nc_exp1.f90 \
+ ../example/nc_getwin.f90 \
+ ../example/nc_hello_world_allkeys.f90 \
+ ../example/nc_hello_world.f90 \
+ ../example/nc_hline.f90 \
+ ../example/nc_init_func_example.f90 \
+ ../example/nc_key_code.f90 \
+ ../example/nc_marquee.f90 \
+ ../example/nc_mouse.f90 \
+ ../example/nc_printw_example.f90 \
+ ../example/nc_putwin.f90 \
+ ../example/nc_scanw_example.f90 \
+ ../example/nc_scanw.f90 \
+ ../example/nc_scr_restore.f90 \
+ ../example/nc_simple_attr.f90 \
+ ../example/nc_simple_color.f90 \
+ ../example/nc_simple_key.f90 \
+ ../example/nc_temp_leave.f90 \
+ ../example/nc_termattrs.f90 \
+ ../example/nc_termname.f90 \
+ ../example/nc_use_default_colors.f90 \
+ ../example/nc_vline.f90 \
+ ../example/nc_wenclose.f90 \
+ ../example/nc_win_border.f90 \
+ ../example/nc_with_chgat.f90 \
 $(NULL)
 
 CPROGFILES = 
