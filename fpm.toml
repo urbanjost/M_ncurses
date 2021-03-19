@@ -4,7 +4,7 @@ license = "MIT"
 author = "John S. Urban"
 maintainer = "urbanjost@comcast.net"
 copyright = "Copyright 2021, John S. Urban"
-description="Fortran interface to ncurses(3c)"
+description = "Fortran interface to ncurses(3c)"
 
 [build]
 auto-executables = true
@@ -14,5 +14,5 @@ auto-examples = true
 link = "ncurses"
 
 [install]
-library = false
+library = true
 
