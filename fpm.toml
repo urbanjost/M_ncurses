@@ -10,6 +10,7 @@ categories = ["strings"]
 keywords = ["fortran", "strings"]
 homepage = "https://github.com/urbanjost/M_strings.git"
 
+
 [build]
 auto-executables = true
 auto-tests = true
@@ -18,5 +19,5 @@ auto-examples = true
 link = "ncurses"
 
 [install]
-library = false
+library = true
 
