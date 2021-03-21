@@ -6,8 +6,8 @@ author = "John S. Urban"
 maintainer = "urbanjost@comcast.net"
 copyright = "Copyright 2021, John S. Urban"
 description = "Fortran interface to ncurses(3c)"
-categories = ["strings"]
-keywords = ["fortran", "strings"]
+categories = ["screen formatting"]
+keywords = ["fortran", "screen","API"]
 homepage = "https://github.com/urbanjost/M_ncurses.git"
 
 [build]

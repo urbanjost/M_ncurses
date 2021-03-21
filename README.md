@@ -13,21 +13,21 @@
 
 ## DOWNLOAD AND BUILD WITH MAKE
    ```bash
-       git clone https://github.com/urbanjost/M_ncurses.git
-       cd M_ncurses/src
-       # change Makefile if not using one of the listed compilers
-     
-       # for gfortran
-       make clean
-       make F90=gfortran gfortran
-     
-       # for ifort
-       make clean
-       make F90=ifort ifort
+      git clone https://github.com/urbanjost/M_ncurses.git
+      cd M_ncurses/src
+      # change Makefile if not using one of the listed compilers
+    
+      # for gfortran
+      make clean
+      make F90=gfortran gfortran
+    
+      # for ifort
+      make clean
+      make F90=ifort ifort
 
-       # for nvfortran
-       make clean
-       make F90=nvfortran nvfortran
+      # for nvfortran
+      make clean
+      make F90=nvfortran nvfortran
    ```
    This will compile the M_ncurses module and build all the example programs.
 
