@@ -55,4 +55,4 @@ or just list it as a dependency in your fpm.toml project file.
 
 ## DOCUMENTATION
 
-- [M_ncurses](https://urbanjost.github.io/M_ncurses/ncurses_from_Fortran.html)  -- An overview of the M_ncurses module
+- [M_ncurses](https://urbanjost.github.io/M_ncurses/index.html)  -- An overview of the M_ncurses module
