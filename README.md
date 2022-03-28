@@ -40,8 +40,8 @@ To download the github repository and build it with
 fpm ( as described at [Fortran Package Manager](https://github.com/fortran-lang/fpm) )
 
 ```bash
-     git clone https://github.com/urbanjost/M_strings.git
-     cd M_strings
+     git clone https://github.com/urbanjost/M_ncurses.git
+     cd M_ncurses
      fpm test  # run unit tests
 ```
 
@@ -49,10 +49,10 @@ or just list it as a dependency in your fpm.toml project file.
 
 ```toml
      [dependencies]
-     M_strings        = { git = "https://github.com/urbanjost/M_strings.git" ,tag="v1.0.1"}
+     M_ncurses        = { git = "https://github.com/urbanjost/M_ncurses.git" ,tag="v1.0.1"}
 ```
 
 
-## DOCUMENTATION
+## DOCUMENTATION   ![docs](docs/images/docs.gif)
 
 - [M_ncurses](https://urbanjost.github.io/M_ncurses/index.html)  -- An overview of the M_ncurses module
