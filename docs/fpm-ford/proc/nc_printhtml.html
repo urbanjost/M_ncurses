@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="M_ncurses module">
+    
+    <meta name="author" content="John S. Urban" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>nc_printhtml &ndash; M_ncurses</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">M_ncurses </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            <li><a href="../lists/modules.html">Modules</a></li>
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+            <li><a href="../lists/types.html">Derived Types</a></li>
+        
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>nc_printhtml
+      <small>Subroutine</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.0% of total for procedures.">222 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/nc_printhtml.f90"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/nc_printhtml.f90.html'>nc_printhtml.f90</a></li>
+    
+  
+     <li class="active">nc_printhtml</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-attr~2">attr</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-bb">bb</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-bf">bf</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-bg">bg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-cell~2">cell</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-class">class</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-colordef">colordef</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-fg">fg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-gb">gb</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-gf">gf</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-i~2">i</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-ierr~2">ierr</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-ilet">ilet</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-ios~3">ios</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-iout~2">iout</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-j~2">j</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-lastclass">lastclass</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-let~2">let</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-lets">lets</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-msg~3">msg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-mx~2">mx</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-my~2">my</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-pair">pair</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-rb">rb</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-rf">rf</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-span">span</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-0" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#proc-ln">ln</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/nc_printhtml.html#src">nc_printhtml</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>
+subroutine nc_printhtml(win, filename)
+    
+    
+   
+</h2>
+    
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      
+      <li class="list-group-item">
+  <ul class="list-inline">
+    
+    <li><a href='../module/m_ncurses.html'>M_ncurses</a></li>
+    
+  </ul>
+      </li>
+      
+      
+      
+      </ul>
+    </div>
+    
+
+
+    
+    <p>Actually an error for now:: So far, no way to write a stream to stdout using Fortran
+ might be worth it to scan window and only print color definitions that are used</p>
+<p>extension to get these set</p>
+<p>even when color not defined did not get an error value back
+ assume this means not defined
+ the attributes of the cell</p>
+    
+
+    <h3>Arguments</h3>
+    
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-win~2"></span>type(C_PTR),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>win</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-filename~2"></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>filename</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    
+    
+    
+    
+     
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-attr~2">attr</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-bb">bb</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-bf">bf</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-bg">bg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-cell~2">cell</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-class">class</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-colordef">colordef</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-fg">fg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-gb">gb</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-gf">gf</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-i~2">i</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-ierr~2">ierr</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-ilet">ilet</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-ios~3">ios</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-iout~2">iout</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-j~2">j</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-lastclass">lastclass</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-let~2">let</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-lets">lets</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-msg~3">msg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-mx~2">mx</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-my~2">my</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-pair">pair</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-rb">rb</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-rf">rf</a>
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#variable-span">span</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-1" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../proc/nc_printhtml.html#proc-ln">ln</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/nc_printhtml.html#src">nc_printhtml</a>
+  </div>
+</div>
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    
+
+    
+    <section>    
+      <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-attr~2"></span>integer(kind=C_LONG),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>attr</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bb"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>bb</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bf"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>bf</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-bg"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>bg</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-cell~2"></span>integer(kind=C_LONG),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>cell</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-class"></span>character(len=100),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>class</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-colordef"></span>character(len=100),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>colordef</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-fg"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>fg</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-gb"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>gb</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-gf"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>gf</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i~2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ierr~2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>ierr</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ilet"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>ilet</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ios~3"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>ios</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iout~2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>iout</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-j~2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>j</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-lastclass"></span>character(len=100),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>lastclass</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-let~2"></span>character(len=1),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>let</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-lets"></span>character(len=128),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>lets</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-msg~3"></span>character(len=256),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>msg</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mx~2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>mx</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-my~2"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>my</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-pair"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>pair</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rb"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>rb</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-rf"></span>integer(kind=C_SHORT),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>rf</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-span"></span>logical,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>span</strong></td><td> =</td><td>.false.</td><td><p>started a span region or not. Might actually use it later</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    <section>
+    <h2>Subroutines</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-ln"></span><h3>
+subroutine ln(string)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*)</td>
+  <td></td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>string</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    </section>    
+    
+    
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span><span class="k">subroutine </span><span class="n">nc_printhtml</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">filename</span><span class="p">)</span> <span class="c">! @(#) print ncurses(3c) window as HTML</span>
+   <span class="k">use </span><span class="n">M_ncurses</span>
+   <span class="k">implicit none</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">type</span><span class="p">(</span><span class="kt">C_PTR</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>       <span class="kd">::</span> <span class="n">win</span>          <span class="c">! window to print</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>  <span class="kd">::</span> <span class="n">filename</span>     <span class="c">! filename to print to</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">my</span><span class="p">,</span><span class="n">mx</span>        <span class="c">! size of the specified window</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_LONG</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">cell</span>         <span class="c">! long character in cell (attributes, color pair, and character)</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">let</span>          <span class="c">! the character in the cell</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">lets</span>         <span class="c">! the characters that need printed in HTML to represent the cell</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">ilet</span>         <span class="c">! decimal value of character in the cell</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_LONG</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">attr</span>         <span class="c">! attributes of the cell</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">ios</span>          <span class="c">! status from open(3f)</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">msg</span>          <span class="c">! message from open(3f)</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">iout</span>         <span class="c">! unit to open(3f) for writing</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span>          <span class="c">! loop counters</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">ierr</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">pair</span>         <span class="c">! color pair used by the cell</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span>     <span class="c">! color components of cell foreground</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span>     <span class="c">! color components of cell background</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">fg</span><span class="p">,</span><span class="n">bg</span>        <span class="c">! foreground and background color numbers of cell</span>
+   <span class="kt">logical</span>                      <span class="kd">::</span> <span class="n">span</span><span class="o">=</span><span class="p">.</span><span class="n">false</span><span class="p">.</span> <span class="c">!! started a span region or not. Might actually use it later</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">colordef</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>           <span class="kd">::</span> <span class="k">class</span>
+<span class="k">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">lastclass</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="k">then</span>
+<span class="k">      </span><span class="n">iout</span><span class="o">=</span><span class="mi">11</span>
+      <span class="k">OPEN</span><span class="p">(</span><span class="n">UNIT</span><span class="o">=</span><span class="n">iout</span><span class="p">,</span><span class="k">FILE</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span><span class="n">ACTION</span><span class="o">=</span><span class="s1">&#39;write&#39;</span><span class="p">,</span><span class="nb">ACCESS</span><span class="o">=</span><span class="s1">&#39;stream&#39;</span><span class="p">,</span><span class="n">FORM</span><span class="o">=</span><span class="s1">&#39;unformatted&#39;</span><span class="p">,</span><span class="n">IOSTAT</span><span class="o">=</span><span class="n">ios</span><span class="p">,</span><span class="n">IOMSG</span><span class="o">=</span><span class="n">msg</span><span class="p">,</span><span class="n">STATUS</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">ios</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="k">then</span>
+<span class="k">         call </span><span class="n">nc_errmessage</span><span class="p">(</span><span class="s2">&quot;failed to open print file &quot;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;:&#39;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+         <span class="k">return</span>
+<span class="k">      endif</span>
+<span class="k">   else</span>       <span class="c">!! Actually an error for now:: So far, no way to write a stream to stdout using Fortran</span>
+      <span class="n">iout</span><span class="o">=</span><span class="mi">6</span>
+   <span class="k">endif</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;html&gt;&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;head&gt;&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;title&gt;&lt;/title&gt;&#39;</span><span class="p">)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;style type=&quot;text/css&quot;&gt;&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.BO { font-weight:     bold;         }&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.U  { text-decoration: underline;    }&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.S  { text-decoration: line-through; }&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.BL { text-decoration: blink;        }&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.I  { font-style:      italic;       }&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.N  { font-style:      normal;       }&#39;</span><span class="p">)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;body{ color: #FFFFFF; background-color: #000000; }&#39;</span><span class="p">)</span>
+<span class="c">! write out defined color pairs</span>
+<span class="c">! CSS does not seem to support the idea of reverse video, so make a &quot;PAIRnn&quot; and a &quot;RPAIRnn&quot; for each pair</span>
+<span class="c">!! might be worth it to scan window and only print color definitions that are used</span>
+<span class="c">! always define foreground and background</span>
+
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.PAIR0{ color: #FFFFFF; background-color: #000000; }&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.RPAIR0{ color: #000000; background-color: #FFFFFF; }&#39;</span><span class="p">)</span>
+
+<span class="k">call </span><span class="n">getcolor</span><span class="p">(</span><span class="n">COLORS</span><span class="p">,</span><span class="n">COLOR_PAIRS</span><span class="p">)</span> <span class="c">!! extension to get these set</span>
+
+<span class="k">do </span><span class="n">pair</span><span class="o">=</span><span class="mi">0_C_SHORT</span><span class="p">,</span><span class="n">COLOR_PAIRS</span>
+   <span class="c">!! even when color not defined did not get an error value back</span>
+   <span class="n">ierr</span><span class="o">=</span><span class="n">pair_content</span><span class="p">(</span><span class="n">pair</span><span class="p">,</span><span class="n">fg</span><span class="p">,</span><span class="n">bg</span><span class="p">)</span>            <span class="c">! find out how a given color-pair is currently defined</span>
+   <span class="n">ierr</span><span class="o">=</span><span class="n">color_content</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span><span class="p">)</span>          <span class="c">! extract red, green, and blue components in an initialized color</span>
+   <span class="n">ierr</span><span class="o">=</span><span class="n">color_content</span><span class="p">(</span><span class="n">bg</span><span class="p">,</span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span><span class="p">)</span>          <span class="c">! extract red, green, and blue components in an initialized color</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">fg</span><span class="o">+</span><span class="n">bg</span><span class="o">+</span><span class="n">rf</span><span class="o">+</span><span class="n">gf</span><span class="o">+</span><span class="n">bf</span><span class="o">+</span><span class="n">bg</span><span class="o">+</span><span class="n">rb</span><span class="o">+</span><span class="n">gb</span><span class="o">+</span><span class="n">bb</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="k">then</span>     <span class="c">!! assume this means not defined</span>
+      <span class="n">rf</span><span class="o">=</span><span class="n">rf</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span>   <span class="c">! the colors are in the range 0 to 1000 inclusive, want a two-digit hex value</span>
+      <span class="n">gf</span><span class="o">=</span><span class="n">gf</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span>
+      <span class="n">bf</span><span class="o">=</span><span class="n">bf</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span>
+      <span class="n">rb</span><span class="o">=</span><span class="n">rb</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span>
+      <span class="n">gb</span><span class="o">=</span><span class="n">gb</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span>
+      <span class="n">bb</span><span class="o">=</span><span class="n">bb</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span>
+      <span class="k">write</span><span class="p">(</span><span class="n">colordef</span><span class="p">,</span><span class="s1">&#39;(&quot;.PAIR&quot;,i0,&quot;{ color: #&quot;,z2.2,z2.2,z2.2,&quot;; background-color: #&quot;,z2.2,z2.2,z2.2,&quot;; }&quot;)&#39;</span><span class="p">)</span><span class="n">pair</span><span class="p">,</span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span><span class="p">,</span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span>
+      <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">colordef</span>
+      <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+      <span class="k">write</span><span class="p">(</span><span class="n">colordef</span><span class="p">,</span><span class="s1">&#39;(&quot;.RPAIR&quot;,i0,&quot;{ color: #&quot;,z2.2,z2.2,z2.2,&quot;; background-color: #&quot;,z2.2,z2.2,z2.2,&quot;; }&quot;)&#39;</span><span class="p">)</span><span class="n">pair</span><span class="p">,</span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span><span class="p">,</span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span>
+      <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">colordef</span>
+      <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+   <span class="k">endif</span>
+<span class="k">enddo</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/style&gt;&#39;</span><span class="p">)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/head&gt;&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;body&gt;&#39;</span><span class="p">)</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;pre&gt;&#39;</span><span class="p">)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">call </span><span class="n">getmaxyx</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mx</span><span class="p">)</span>                     <span class="c">! size window size as defined (all of it, even if subsection being displayed)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="n">lastclass</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+   <span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">my</span><span class="o">-</span><span class="mi">1</span>
+      <span class="k">do </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">mx</span><span class="o">-</span><span class="mi">1</span>
+         <span class="k">class</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+         <span class="n">cell</span><span class="o">=</span><span class="n">mvwinch</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>                    <span class="c">! retrieve cell value</span>
+         <span class="n">ilet</span><span class="o">=</span><span class="nb">iand</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span><span class="n">A_CHARTEXT</span><span class="p">)</span>               <span class="c">! get decimal letter from cell using bit-mask</span>
+         <span class="n">let</span><span class="o">=</span><span class="nb">char</span><span class="p">(</span><span class="n">ilet</span><span class="p">)</span>                           <span class="c">! get character from decimal</span>
+         <span class="n">lets</span><span class="o">=</span><span class="n">let</span>                                 <span class="c">! what to print for the character</span>
+         <span class="n">pair</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">PAIR_NUMBER</span><span class="p">(</span><span class="n">cell</span><span class="p">),</span><span class="kt">C_INT</span><span class="p">)</span>        <span class="c">! the color pair used to draw the cell</span>
+         <span class="n">attr</span><span class="o">=</span><span class="nb">iand</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span><span class="n">A_ATTRIBUTES</span><span class="p">)</span>             <span class="c">!! the attributes of the cell</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_BLINK</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span> <span class="n">A_BLINK</span><span class="p">)</span>          <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; BL&#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_INVIS</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span> <span class="n">A_INVIS</span><span class="p">)</span>          <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; IN&#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_NORMAL</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span> <span class="n">A_NORMAL</span><span class="p">)</span>        <span class="k">class</span><span class="o">=</span><span class="k">class</span> <span class="c">!class=&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_PROTECT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span> <span class="n">A_PROTECT</span><span class="p">)</span>      <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_UNDERLINE</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span> <span class="n">A_UNDERLINE</span><span class="p">)</span>  <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; U&#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_DIM</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_DIM</span><span class="p">)</span>               <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_HORIZONTAL</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_HORIZONTAL</span><span class="p">)</span> <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_LEFT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_LEFT</span><span class="p">)</span>             <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_LOW</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_LOW</span><span class="p">)</span>               <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_RIGHT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_RIGHT</span><span class="p">)</span>           <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_STANDOUT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_STANDOUT</span><span class="p">)</span>     <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_TOP</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_TOP</span><span class="p">)</span>               <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_VERTICAL</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_VERTICAL</span><span class="p">)</span>     <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_BOLD</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_BOLD</span><span class="p">)</span>             <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; BO&#39;</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_ITALIC</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_ITALIC</span><span class="p">)</span>         <span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; I&#39;</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+         <span class="c">! The Alternate Character Set ( includes lines &amp; boxes)</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_ALTCHARSET</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_ALTCHARSET</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            select case</span><span class="p">(</span><span class="n">let</span><span class="p">)</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9484;&quot;</span>   <span class="c">! ACS_ULCORNER upper left corner        ┌</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9492;&quot;</span>   <span class="c">! ACS_LLCORNER lower left corner        └</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;k&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9488;&quot;</span>   <span class="c">! ACS_URCORNER upper right corner       ┐</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;j&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9496;&quot;</span>   <span class="c">! ACS_LRCORNER lower right corner       ┘</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9500;&quot;</span>   <span class="c">! ACS_LTEE     tee pointing right       ├</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9508;&quot;</span>   <span class="c">! ACS_RTEE     tee pointing left        ┤</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9524;&quot;</span>   <span class="c">! ACS_BTEE     tee pointing up          ┴</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9516;&quot;</span>   <span class="c">! ACS_TTEE     tee pointing down        ┬</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9472;&quot;</span>   <span class="c">! ACS_HLINE    horizontal line          ─</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9474;&quot;</span>   <span class="c">! ACS_VLINE    vertical line            !</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9532;&quot;</span>   <span class="c">! ACS_PLUS     large plus or crossover  ┼</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9146;&quot;</span>   <span class="c">! ACS_S1       macron, overline, scan line 1 (above) ⎺</span>
+               <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;macr;&quot;</span>
+               <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9146;&quot;</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9149;&quot;</span>   <span class="c">! ACS_S9       scan line 9 (below)      ⎽</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;`&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9670;&quot;</span>   <span class="c">! ACS_DIAMOND  diamond                  ◆</span>
+               <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;loz;&quot;</span>
+               <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;diams;&quot;</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#2591;&quot;</span>   <span class="c">! ACS_CKBOARD  checker board (stipple)  ▒</span>
+               <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9618;&quot;</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;deg;&quot;</span>     <span class="c">! ACS_DEGREE   degree symbol            °</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;plusmn;&quot;</span>  <span class="c">! ACS_PLMINUS  plus/minus               ±</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;bull;&quot;</span>    <span class="c">! ACS_BULLET   bullet                   · •</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;larr;&quot;</span>    <span class="c">! ACS_LARROW   arrow pointing left      ←</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;rarr;&quot;</span>    <span class="c">! ACS_RARROW   arrow pointing right     →</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;darr;&quot;</span>    <span class="c">! ACS_DARROW   arrow pointing down      ↓</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;uarr;&quot;</span>    <span class="c">! ACS_UARROW   arrow pointing up        ↑</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9626;&quot;</span>   <span class="c">! ACS_BOARD    board of squares         ▚</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9227;&quot;</span>   <span class="c">! ACS_LANTERN  lantern symbol           ␋</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;block;&quot;</span>   <span class="c">! ACS_BLOCK    solid square block       █</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9147;&quot;</span>   <span class="c">! ACS_S3       scan line 3(at top)      ⎻</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9148;&quot;</span>   <span class="c">! ACS_S7       scan line 7 (at bottom)  ⎼</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;le;&quot;</span>      <span class="c">! ACS_LEQUAL   less/equal               ≤</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;ge;&quot;</span>      <span class="c">! ACS_GEQUAL   greater/equal            ≥</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;{&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;pi;&quot;</span>      <span class="c">! ACS_PI       Pi                       π</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;ne;&quot;</span>      <span class="c">! ACS_NEQUAL   not equal                ≠</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;}&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;pound;&quot;</span>   <span class="c">! ACS_STERLING UK pound sign            £</span>
+            <span class="k">end select</span>
+<span class="k">         else</span>                           <span class="c">! Regular Characters that are special in HTML</span>
+            <span class="k">select case</span><span class="p">(</span><span class="n">let</span><span class="p">)</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;&amp;&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;amp;&#39;</span>     <span class="c">!   &amp;  &amp;#38;  {ampersand}</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;&lt;&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;lt;&#39;</span>      <span class="c">!   &lt;  &amp;#60;  {less than}</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;gt;&#39;</span>      <span class="c">!   &gt;  &amp;#62;  {greater than}</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">);</span> <span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;quot;&#39;</span>    <span class="c">!   &quot;  &amp;#34;  {quotation mark}</span>
+            <span class="c">!case(&#39; &#39;); lets=&#39;&amp;nbsp;&#39;   !      &amp;#160; {Non-breaking space}</span>
+            <span class="k">end select</span>
+<span class="k">         endif</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_REVERSE</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_REVERSE</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; RPAIR&quot;,i0)&#39;</span><span class="p">)</span> <span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span>
+         <span class="k">else</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; PAIR&quot;,i0)&#39;</span><span class="p">)</span> <span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span>
+         <span class="k">endif</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_STANDOUT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_STANDOUT</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; RPAIR&quot;,i0)&#39;</span><span class="p">)</span> <span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span>
+         <span class="k">else</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; PAIR&quot;,i0)&#39;</span><span class="p">)</span> <span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span>
+         <span class="k">endif</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+         <span class="k">if</span><span class="p">(</span><span class="k">class</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="n">lastclass</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            if</span><span class="p">(</span><span class="n">span</span><span class="p">)</span><span class="k">then</span>
+<span class="k">               write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="s1">&#39;&lt;/span&gt;&#39;</span>
+               <span class="n">span</span><span class="o">=</span><span class="p">.</span><span class="n">false</span><span class="p">.</span>
+            <span class="k">endif</span>
+<span class="k">            if</span><span class="p">(</span><span class="k">class</span><span class="p">.</span><span class="n">eq</span><span class="p">.</span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="k">then</span>
+<span class="k">               write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="s1">&#39;&lt;span class=&quot;N&quot;&gt;&#39;</span>
+            <span class="k">else</span>
+<span class="k">               write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="s1">&#39;&lt;span class=&quot;&#39;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;&quot;&gt;&#39;</span>
+            <span class="k">endif</span>
+<span class="k">            </span><span class="n">span</span><span class="o">=</span><span class="p">.</span><span class="n">true</span><span class="p">.</span>
+         <span class="k">endif</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+         <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">lets</span><span class="p">(:</span><span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len_trim</span><span class="p">(</span><span class="n">lets</span><span class="p">)))</span> <span class="c">! print a space even if string is blank</span>
+         <span class="n">lastclass</span><span class="o">=</span><span class="k">class</span>
+<span class="k">      enddo</span>
+<span class="k">      write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">NEW_LINE</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+   <span class="k">enddo</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">span</span><span class="p">)</span><span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="p">)</span>
+   <span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">)</span>
+   <span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/body&gt;&#39;</span><span class="p">)</span>
+   <span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/html&gt;&#39;</span><span class="p">)</span>
+   <span class="n">endfile</span><span class="p">(</span><span class="n">unit</span><span class="o">=</span><span class="n">iout</span><span class="p">,</span><span class="n">iostat</span><span class="o">=</span><span class="n">ios</span><span class="p">,</span><span class="n">iomsg</span><span class="o">=</span><span class="n">msg</span><span class="p">)</span> <span class="c">! make sure file is truncated or longer old files may leave data in file</span>
+<span class="k">contains</span>
+<span class="k">subroutine </span><span class="n">ln</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+   <span class="k">implicit none</span>
+<span class="k">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">)</span> <span class="kd">::</span> <span class="n">string</span>
+   <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">string</span>
+   <span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+   <span class="k">end subroutine </span><span class="n">ln</span>
+<span class="k">end subroutine </span><span class="n">nc_printhtml</span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    
+    </div>
+  </div>
+
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2022 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+             on 2022-05-04 21:39  
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> M_ncurses was developed by John S. Urban</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>

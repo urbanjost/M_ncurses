@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="M_ncurses module">
+    
+    <meta name="author" content="John S. Urban" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>nc_printplain &ndash; M_ncurses</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">M_ncurses </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            <li><a href="../lists/modules.html">Modules</a></li>
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+               
+            <li><a href="../lists/types.html">Derived Types</a></li>
+        
+        
+            </ul>
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+
+
+          </ul>
+        
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>nc_printplain
+      <small>Subroutine</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.0% of total for procedures.">63 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/nc_printplain.f90"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/nc_printplain.f90.html'>nc_printplain.f90</a></li>
+    
+  
+     <li class="active">nc_printplain</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-attr">attr</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-cell">cell</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-i">i</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-ios">ios</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-iout">iout</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-j">j</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-let">let</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-msg">msg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-mx">mx</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-my">my</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/nc_printplain.html#src">nc_printplain</a>
+  </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>
+subroutine nc_printplain(win, filename)
+    
+    
+   
+</h2>
+    
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      
+      <li class="list-group-item">
+  <ul class="list-inline">
+    
+    <li><a href='../module/m_ncurses.html'>M_ncurses</a></li>
+    
+  </ul>
+      </li>
+      
+      
+      
+      </ul>
+    </div>
+    
+
+
+    
+    <p>use stream position or buffer lines and print to remove trailing white space</p>
+    
+
+    <h3>Arguments</h3>
+    
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-win"></span>type(C_PTR),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>win</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-filename"></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>filename</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    
+    
+    
+    
+     
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-attr">attr</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-cell">cell</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-i">i</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-ios">ios</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-iout">iout</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-j">j</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-let">let</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-msg">msg</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-mx">mx</a>
+      
+      <a class="list-group-item" href="../proc/nc_printplain.html#variable-my">my</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/nc_printplain.html#src">nc_printplain</a>
+  </div>
+</div>
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    
+
+    
+    <section>    
+      <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-attr"></span>integer(kind=C_LONG),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>attr</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-cell"></span>integer(kind=C_LONG),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>cell</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ios"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>ios</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iout"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>save</td><td>::</td>
+  <td><strong>iout</strong></td><td> =</td><td>11</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-j"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>j</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-let"></span>character(len=1),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>let</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-msg"></span>character(len=256),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>msg</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-mx"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>mx</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-my"></span>integer,</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>my</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span><span class="k">subroutine </span><span class="n">nc_printplain</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">filename</span><span class="p">)</span> <span class="c">! @(#) plain text print reading window from ncurses</span>
+   <span class="k">use </span><span class="n">M_ncurses</span>
+   <span class="k">implicit none</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">type</span><span class="p">(</span><span class="kt">C_PTR</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>       <span class="kd">::</span> <span class="n">win</span>          <span class="c">! window to print</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>  <span class="kd">::</span> <span class="n">filename</span>     <span class="c">! filename to print to</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">my</span><span class="p">,</span><span class="n">mx</span>        <span class="c">! size of the specified window</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_LONG</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">cell</span>         <span class="c">! cell information (attributes, color pair, and character)</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>             <span class="kd">::</span> <span class="n">let</span>          <span class="c">! the character in the cell</span>
+   <span class="kt">integer</span><span class="p">(</span><span class="kt">C_LONG</span><span class="p">)</span>              <span class="kd">::</span> <span class="n">attr</span>         <span class="c">! attributes of the cell</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">ios</span>          <span class="c">! status from open(3f)</span>
+   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>           <span class="kd">::</span> <span class="n">msg</span>          <span class="c">! message from open(3f)</span>
+   <span class="kt">integer</span><span class="p">,</span><span class="k">save</span>                 <span class="kd">::</span> <span class="n">iout</span><span class="o">=</span><span class="mi">11</span>      <span class="c">! unit to open(3f) for writing</span>
+   <span class="kt">integer</span>                      <span class="kd">::</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span>          <span class="c">! loop counters</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">OPEN</span><span class="p">(</span><span class="n">UNIT</span><span class="o">=</span><span class="n">iout</span><span class="p">,</span><span class="k">FILE</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span><span class="n">ACTION</span><span class="o">=</span><span class="s1">&#39;write&#39;</span><span class="p">,</span><span class="nb">ACCESS</span><span class="o">=</span><span class="s1">&#39;stream&#39;</span><span class="p">,</span><span class="n">FORM</span><span class="o">=</span><span class="s1">&#39;unformatted&#39;</span><span class="p">,</span><span class="n">IOSTAT</span><span class="o">=</span><span class="n">ios</span><span class="p">,</span><span class="n">IOMSG</span><span class="o">=</span><span class="n">msg</span><span class="p">,</span><span class="n">STATUS</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">ios</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="k">then</span>
+<span class="k">      call </span><span class="n">nc_errmessage</span><span class="p">(</span><span class="s2">&quot;failed to open print file &quot;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;:&#39;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+      <span class="k">return</span>
+<span class="k">   endif</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">call </span><span class="n">getmaxyx</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mx</span><span class="p">)</span>                     <span class="c">! window size as defined (all of it, even if subsection being displayed)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">my</span><span class="o">-</span><span class="mi">1</span>                                  <span class="c">! scan window cell by cell</span>
+      <span class="k">do </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">mx</span><span class="o">-</span><span class="mi">1</span>
+         <span class="n">cell</span><span class="o">=</span><span class="n">mvwinch</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>                  <span class="c">! retrieve cell value</span>
+         <span class="n">let</span><span class="o">=</span><span class="nb">char</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span><span class="n">A_CHARTEXT</span><span class="p">))</span>        <span class="c">! get letter from cell using bit-mask</span>
+         <span class="n">attr</span><span class="o">=</span><span class="nb">iand</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span><span class="n">A_ATTRIBUTES</span><span class="p">)</span>           <span class="c">! the attributes of the cell</span>
+         <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_ALTCHARSET</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_ALTCHARSET</span><span class="p">)</span><span class="k">then</span>  <span class="c">! if an alternate character pick a standard character</span>
+            <span class="k">select case</span><span class="p">(</span><span class="n">let</span><span class="p">)</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;#&#39;</span> <span class="c">! ACS_ULCORNER  upper left corner</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;#&#39;</span> <span class="c">! ACS_LLCORNER  lower left corner</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;k&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;#&#39;</span> <span class="c">! ACS_URCORNER  upper right corner</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;j&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;#&#39;</span> <span class="c">! ACS_LRCORNER  lower right corner</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;+&#39;</span> <span class="c">! ACS_LTEE      tee pointing right</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;+&#39;</span> <span class="c">! ACS_RTEE      tee pointing left</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;+&#39;</span> <span class="c">! ACS_BTEE      tee pointing up</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;+&#39;</span> <span class="c">! ACS_TTEE      tee pointing down</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;-&#39;</span> <span class="c">! ACS_HLINE     horizontal line</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;|&#39;</span> <span class="c">! ACS_VLINE     vertical line</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;+&#39;</span> <span class="c">! ACS_PLUS      large plus or crossover</span>
+            <span class="k">case</span><span class="p">(</span><span class="s1">&#39;`&#39;</span><span class="p">);</span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;o&#39;</span> <span class="c">! ACS_DIAMOND</span>
+               <span class="c">! for the fixedform(1) program change diamond if &quot;selected&quot; so can tell the difference in output</span>
+               <span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_STANDOUT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_STANDOUT</span><span class="p">)</span><span class="k">then</span>  <span class="c">! using reverse or standout on a diamond to select it as a menu item</span>
+                  <span class="n">let</span><span class="o">=</span><span class="s1">&#39;X&#39;</span>
+               <span class="k">endif</span>
+<span class="k">               if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_REVERSE</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_REVERSE</span><span class="p">)</span><span class="k">then</span>
+<span class="k">                  </span><span class="n">let</span><span class="o">=</span><span class="s1">&#39;X&#39;</span>
+               <span class="k">endif</span>
+<span class="k">            end select</span>
+<span class="k">         endif</span>
+<span class="k">         write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">let</span>          <span class="c">!! use stream position or buffer lines and print to remove trailing white space</span>
+      <span class="k">enddo</span>
+<span class="k">      write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">NEW_LINE</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>   <span class="c">! write system-appropriate end-of-line</span>
+   <span class="k">enddo</span>
+<span class="k">end subroutine </span><span class="n">nc_printplain</span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    
+    </div>
+  </div>
+
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4"><p>&copy; 2022 
+                                          </p></div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/cmacmackin/ford">FORD</a>
+             on 2022-05-04 21:39  
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> M_ncurses was developed by John S. Urban</p></div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
+  </body>
+</html>
