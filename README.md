@@ -2,16 +2,16 @@
 
 ![example](docs/images/example.gif)
 
-## NAME
+## Name
 
 ### M_ncurses - Fortran interface for the C Ncurses library
 
-## DESCRIPTION
+## Description
 
    M_ncurses(3f) is a Fortran module that allows use of the ncurses(3c)
    library for controlling and formatting terminal displays.
 
-## DOWNLOAD AND BUILD WITH MAKE
+## Download and Build with Make
    ```bash
       git clone https://github.com/urbanjost/M_ncurses.git
       cd M_ncurses/src
@@ -31,7 +31,7 @@
    ```
    This will compile the M_ncurses module and build all the example programs.
 
-## DOWNLOAD AND BUILD WITH FPM ![fpm](docs/images/fpm_logo.gif)
+## Download and Build with FPM ![fpm](docs/images/fpm_logo.gif)
 <!--
 #### (registered at the [fpm(1) registry](https://github.com/fortran-lang/fpm-registry) )
 -->
@@ -53,6 +53,18 @@ or just list it as a dependency in your fpm.toml project file.
 ```
 
 
-## DOCUMENTATION   ![docs](docs/images/docs.gif)
+## Documentation   ![docs](docs/images/docs.gif)
 
 - [M_ncurses](https://urbanjost.github.io/M_ncurses/index.html)  -- An overview of the M_ncurses module
+
+## Dependencies   
+
+The ncurses library must be available on the system. The home page for ncurses
+describes various installation methods.
+
+#### ubuntu, mint, ...
+```bash
+sudo apt-get install ncurses-dev
+sudo updatedb
+locate ncurses.h
+```
