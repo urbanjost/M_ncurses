@@ -22,6 +22,76 @@ module commands
      'Clipboard test' /)
 end module commands
 !-------------------------------------------------------------------------------
+program testcurses
+  use M_ncurses
+  use commands
+  type (C_PTR) :: iwin = C_NULL_PTR
+  integer (C_INT) :: key
+  integer :: istat, new_option=1, old_option=0
+  integer :: ierr
+  call initTest(iwin, istat)
+  if (istat /= 0) then
+    write(*,*) 'ERROR 101: initscr failed! STATUS=',istat
+    ierr=endwin()
+    stop
+  end if
+! ierr=init_pair(1, color_white, color_blue)
+! ierr=wbkgd(iwin,
+  ierr=wbkgd(iwin, a_reverse)
+  ierr=erase()
+  call display_menu(old_option, new_option)
+  do
+    ierr=noecho()
+    ierr=raw()
+    ierr=keypad(stdscr, true)
+    key=getch()
+    if (key == 10 .or. key == 13 .or. key==key_enter) then
+      old_option = 0
+      ierr=erase()
+      ierr=refresh()
+      if (new_option == 1) then
+        call introtest(iwin, istat)
+      else if (new_option == 2) then
+        call resizetest(istat)
+      else if (new_option == 3) then
+        call scrolltest(iwin, istat)
+      else if (new_option == 5) then
+        call outputtest(iwin)
+      else if (new_option == 6) then
+        call acstest(iwin)
+      else
+        call notavail(iwin)
+      end if
+      ierr=erase()
+      call display_menu(old_option, new_option)
+    else if (key==key_ppage .or. key==key_home) then
+      old_option = new_option
+      new_option = 1
+      call display_menu(old_option, new_option)
+    else if (key==key_npage .or. key==key_end) then
+      old_option = new_option
+      new_option = MAX_OPTIONS
+      call display_menu(old_option, new_option)
+    else if (key==key_up) then
+      old_option = new_option
+      if (new_option > 1) then
+        new_option = new_option-1
+      end if
+      call display_menu(old_option, new_option)
+    else if (key==key_down) then
+      old_option = new_option
+      if (new_option < MAX_OPTIONS) then
+        new_option = new_option+1
+      end if
+      call display_menu(old_option, new_option)
+    else if (key==ichar('Q') .or. key==ichar('q')) then
+      exit
+    end if
+  end do
+  ierr=delwin(iwin)
+  ierr=endwin()
+contains
+!-------------------------------------------------------------------------------
 subroutine initTest(iwin, istat)
   use M_ncurses
   use winsize
@@ -409,72 +479,4 @@ subroutine display_menu(old_option, new_option)
     ierr=refresh()
 end subroutine display_menu
 !-------------------------------------------------------------------------------
-program testcurses
-  use M_ncurses
-  use commands
-  type (C_PTR) :: iwin = C_NULL_PTR
-  integer (C_INT) :: key
-  integer :: istat, new_option=1, old_option=0
-  call initTest(iwin, istat)
-  if (istat /= 0) then
-    write(*,*) 'ERROR 101: initscr failed! STATUS=',istat
-    ierr=endwin()
-    stop
-  end if
-! ierr=init_pair(1, color_white, color_blue)
-! ierr=wbkgd(iwin,
-  ierr=wbkgd(iwin, a_reverse)
-  ierr=erase()
-  call display_menu(old_option, new_option)
-  do
-    ierr=noecho()
-    ierr=raw()
-    ierr=keypad(stdscr, true)
-    key=getch()
-    if (key == 10 .or. key == 13 .or. key==key_enter) then
-      old_option = 0
-      ierr=erase()
-      ierr=refresh()
-      if (new_option == 1) then
-        call introtest(iwin, istat)
-      else if (new_option == 2) then
-        call resizetest(istat)
-      else if (new_option == 3) then
-        call scrolltest(iwin, istat)
-      else if (new_option == 5) then
-        call outputtest(iwin)
-      else if (new_option == 6) then
-        call acstest(iwin)
-      else
-        call notavail(iwin)
-      end if
-      ierr=erase()
-      call display_menu(old_option, new_option)
-    else if (key==key_ppage .or. key==key_home) then
-      old_option = new_option
-      new_option = 1
-      call display_menu(old_option, new_option)
-    else if (key==key_npage .or. key==key_end) then
-      old_option = new_option
-      new_option = MAX_OPTIONS
-      call display_menu(old_option, new_option)
-    else if (key==key_up) then
-      old_option = new_option
-      if (new_option > 1) then
-        new_option = new_option-1
-      end if
-      call display_menu(old_option, new_option)
-    else if (key==key_down) then
-      old_option = new_option
-      if (new_option < MAX_OPTIONS) then
-        new_option = new_option+1
-      end if
-      call display_menu(old_option, new_option)
-    else if (key==ichar('Q') .or. key==ichar('q')) then
-      exit
-    end if
-  end do
-  ierr=delwin(iwin)
-  ierr=endwin()
 end program testcurses
-!-------------------------------------------------------------------------------

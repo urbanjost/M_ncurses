@@ -116,11 +116,14 @@ program simple_key
    ierr=refresh()        ! make sure everything is posted to the real screen
    ierr=getch()          ! Wait for a user keystroke. Some terminal types will restore or clear the screen so a pause is a good idea
    ierr=endwin()         ! exit curses mode
-end program simple_key
-!-------------------------------------------------------------------------------
+
+contains
+
 subroutine numbers()
    use M_ncurses
    character(len=3)   :: label
+   integer :: i
+   integer :: ierr
    do i=0,999   ! label up to 1000 rows of the main screen with a number on the left edge
       write(label,'(i3.3)')i
       ierr=mvaddstr(i, 0, trim(label)//C_NULL_CHAR)
@@ -128,4 +131,6 @@ subroutine numbers()
    enddo
    ierr=refresh()   ! make sure everything is posted to the real screen
 end subroutine numbers
+
+end program simple_key
 !-------------------------------------------------------------------------------

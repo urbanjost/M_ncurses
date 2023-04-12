@@ -27,7 +27,7 @@ program simple_color
    ierr=attroff(COLOR_PAIR(1))
    ierr=getch()
    ierr=endwin()
-end program simple_color
+contains
 !-------------------------------------------------------------------------------
 subroutine print_in_middle(win, starty, startx, width0, string)
    use M_ncurses
@@ -70,3 +70,4 @@ subroutine print_in_middle(win, starty, startx, width0, string)
 
 end subroutine print_in_middle
 !-------------------------------------------------------------------------------
+end program simple_color

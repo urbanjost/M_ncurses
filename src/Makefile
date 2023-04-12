@@ -44,7 +44,7 @@ CPROG = ${CPROGFILES:.c=}
 
 SRCS =  M_ncurses.f90 macros.c nc_errmessage.f90 nc_printhtml.f90 nc_printplain.f90 
 
-OBJS =  M_ncurses.o macros.o nc_errmessage.o nc_printhtml.o nc_printplain.o 
+OBJS =  M_ncurses.o macros.o M_ncurses_aux.o 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # platform-specific values you will probably change
 # 
@@ -91,6 +91,4 @@ clean:
 .F90.o:
 	$(F90) $(F90FLAGS) -c $<
 #=================================================================================
-nc_errmessage.o: M_ncurses.o 
-nc_printhtml.o: M_ncurses.o 
-nc_printplain.o: M_ncurses.o 
+M_ncurses_fpm.o: M_ncurses.o 
