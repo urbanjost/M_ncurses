@@ -1,4 +1,4 @@
-module M_ncurses_aux
+module M_ncurses__aux
 private
 public :: nc_errmessage
 public :: nc_printhtml
@@ -295,4 +295,4 @@ subroutine nc_printplain(win,filename) ! @(#) plain text print reading window fr
       write(iout)NEW_LINE('a')   ! write system-appropriate end-of-line
    enddo
 end subroutine nc_printplain
-end module M_ncurses_aux
+end module M_ncurses__aux

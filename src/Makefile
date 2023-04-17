@@ -44,7 +44,7 @@ CPROG = ${CPROGFILES:.c=}
 
 SRCS =  M_ncurses.f90 macros.c nc_errmessage.f90 nc_printhtml.f90 nc_printplain.f90 
 
-OBJS =  M_ncurses.o macros.o M_ncurses_aux.o 
+OBJS =  M_ncurses.o macros.o M_ncurses__aux.o 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 # platform-specific values you will probably change
 # 

@@ -31,7 +31,7 @@ contains
 !-------------------------------------------------------------------------------
 subroutine print_in_middle(win, starty, startx, width0, string)
    use M_ncurses
-   use ncurses_types
+   use M_ncurses__types
    implicit none
    integer(C_INT)                          :: ierr
    type(C_PTR)                             :: win

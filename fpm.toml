@@ -1,4 +1,4 @@
-# TOML file for fpm as described at https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md
+# TOML file for fpm as described at https://fpm.fortran-lang.org/en/spec/manifest.html
 name = "M_ncurses"
 version = "0.1.0"
 license = "MIT"
@@ -14,6 +14,7 @@ homepage = "https://github.com/urbanjost/M_ncurses.git"
 auto-executables = true
 auto-tests = true
 auto-examples = true
+#module-naming = true
 
 link = "ncurses"
 
