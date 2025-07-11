@@ -1,0 +1,481 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="M_ncurses module">
+    <meta name="author" content="John S. Urban" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>nc_printhtml &ndash; M_ncurses</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="../css/local.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">M_ncurses </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>nc_printhtml
+      <small>Subroutine</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                 title=" 0.0% of total for procedures.">222 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/M_ncurses_aux.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/m_ncurses_aux.f90.html'>M_ncurses_aux.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/m_ncurses__aux.html'>M_ncurses__aux</a></li>
+            <li class="breadcrumb-item active" aria-current="page">nc_printhtml</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="card card-primary">
+      <div class="card-header text-left"><h3 class="card-title">Source Code</h3></div>
+      <div class="list-group">
+        <a class="list-group-item" href="../proc/nc_printhtml.html#src">nc_printhtml</a>
+      </div>
+    </div>
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>public  subroutine nc_printhtml(win, filename)  
+</h2>
+        <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href='../module/m_ncurses.html'>M_ncurses</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <p>Actually an error for now:: So far, no way to write a stream to stdout using Fortran
+might be worth it to scan window and only print color definitions that are used</p>
+<p>extension to get these set</p>
+<p>even when color not defined did not get an error value back
+assume this means not defined
+the attributes of the cell</p>
+
+
+    <h3>Arguments</h3>
+        <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-win~186"></span>
+              type(C_PTR),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>win</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-filename~7"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>filename</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <br>
+
+
+    
+    
+
+    
+    
+
+
+
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="hl codehilite"><pre><span></span><span class="k">subroutine </span><span class="n">nc_printhtml</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">filename</span><span class="p">)</span><span class="w"> </span><span class="c">! @(#) print ncurses(3c) window as HTML</span>
+<span class="w">   </span><span class="k">use </span><span class="n">M_ncurses</span><span class="w"></span>
+<span class="w">   </span><span class="k">implicit none</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">   </span><span class="k">type</span><span class="p">(</span><span class="kt">C_PTR</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">       </span><span class="kd">::</span><span class="w"> </span><span class="n">win</span><span class="w">          </span><span class="c">! window to print</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">  </span><span class="kd">::</span><span class="w"> </span><span class="n">filename</span><span class="w">     </span><span class="c">! filename to print to</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">my</span><span class="p">,</span><span class="n">mx</span><span class="w">        </span><span class="c">! size of the specified window</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="kt">C_LONG</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">cell</span><span class="w">         </span><span class="c">! long character in cell (attributes, color pair, and character)</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="w">             </span><span class="kd">::</span><span class="w"> </span><span class="n">let</span><span class="w">          </span><span class="c">! the character in the cell</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">lets</span><span class="w">         </span><span class="c">! the characters that need printed in HTML to represent the cell</span>
+<span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">ilet</span><span class="w">         </span><span class="c">! decimal value of character in the cell</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="kt">C_LONG</span><span class="p">)</span><span class="w">              </span><span class="kd">::</span><span class="w"> </span><span class="n">attr</span><span class="w">         </span><span class="c">! attributes of the cell</span>
+<span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">ios</span><span class="w">          </span><span class="c">! status from open(3f)</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">msg</span><span class="w">          </span><span class="c">! message from open(3f)</span>
+<span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">iout</span><span class="w">         </span><span class="c">! unit to open(3f) for writing</span>
+<span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="w">          </span><span class="c">! loop counters</span>
+<span class="w">   </span><span class="kt">integer</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">ierr</span><span class="w"></span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span><span class="w">             </span><span class="kd">::</span><span class="w"> </span><span class="n">pair</span><span class="w">         </span><span class="c">! color pair used by the cell</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span><span class="w">             </span><span class="kd">::</span><span class="w"> </span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span><span class="w">     </span><span class="c">! color components of cell foreground</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span><span class="w">             </span><span class="kd">::</span><span class="w"> </span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span><span class="w">     </span><span class="c">! color components of cell background</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="kt">C_SHORT</span><span class="p">)</span><span class="w">             </span><span class="kd">::</span><span class="w"> </span><span class="n">fg</span><span class="p">,</span><span class="n">bg</span><span class="w">        </span><span class="c">! foreground and background color numbers of cell</span>
+<span class="w">   </span><span class="kt">logical</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">span</span><span class="o">=</span><span class="p">.</span><span class="n">false</span><span class="p">.</span><span class="w"> </span><span class="c">!! started a span region or not. Might actually use it later</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">colordef</span><span class="w"></span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="k">class</span>
+<span class="k">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">lastclass</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">   </span><span class="k">if</span><span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="k">then</span>
+<span class="k">      </span><span class="n">iout</span><span class="o">=</span><span class="mi">11</span><span class="w"></span>
+<span class="w">      </span><span class="k">OPEN</span><span class="p">(</span><span class="n">UNIT</span><span class="o">=</span><span class="n">iout</span><span class="p">,</span><span class="k">FILE</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span><span class="n">ACTION</span><span class="o">=</span><span class="s1">&#39;write&#39;</span><span class="p">,</span><span class="nb">ACCESS</span><span class="o">=</span><span class="s1">&#39;stream&#39;</span><span class="p">,</span><span class="n">FORM</span><span class="o">=</span><span class="s1">&#39;unformatted&#39;</span><span class="p">,</span><span class="n">IOSTAT</span><span class="o">=</span><span class="n">ios</span><span class="p">,</span><span class="n">IOMSG</span><span class="o">=</span><span class="n">msg</span><span class="p">,</span><span class="n">STATUS</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="p">(</span><span class="n">ios</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="k">then</span>
+<span class="k">         call </span><span class="n">nc_errmessage</span><span class="p">(</span><span class="s2">&quot;failed to open print file &quot;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;:&#39;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span><span class="w"></span>
+<span class="w">         </span><span class="k">return</span>
+<span class="k">      endif</span>
+<span class="k">   else</span><span class="w">       </span><span class="c">!! Actually an error for now:: So far, no way to write a stream to stdout using Fortran</span>
+<span class="w">      </span><span class="n">iout</span><span class="o">=</span><span class="mi">6</span><span class="w"></span>
+<span class="w">   </span><span class="k">endif</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;html&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;head&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;title&gt;&lt;/title&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;style type=&quot;text/css&quot;&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.BO { font-weight:     bold;         }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.U  { text-decoration: underline;    }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.S  { text-decoration: line-through; }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.BL { text-decoration: blink;        }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.I  { font-style:      italic;       }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.N  { font-style:      normal;       }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;body{ color: #FFFFFF; background-color: #000000; }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="c">! write out defined color pairs</span>
+<span class="c">! CSS does not seem to support the idea of reverse video, so make a &quot;PAIRnn&quot; and a &quot;RPAIRnn&quot; for each pair</span>
+<span class="c">!! might be worth it to scan window and only print color definitions that are used</span>
+<span class="c">! always define foreground and background</span>
+
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.PAIR0{ color: #FFFFFF; background-color: #000000; }&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;.RPAIR0{ color: #000000; background-color: #FFFFFF; }&#39;</span><span class="p">)</span><span class="w"></span>
+
+<span class="k">call </span><span class="n">getcolor</span><span class="p">(</span><span class="n">COLORS</span><span class="p">,</span><span class="n">COLOR_PAIRS</span><span class="p">)</span><span class="w"> </span><span class="c">!! extension to get these set</span>
+
+<span class="k">do </span><span class="n">pair</span><span class="o">=</span><span class="mi">0_C_SHORT</span><span class="p">,</span><span class="n">COLOR_PAIRS</span><span class="w"></span>
+<span class="w">   </span><span class="c">!! even when color not defined did not get an error value back</span>
+<span class="w">   </span><span class="n">ierr</span><span class="o">=</span><span class="n">pair_content</span><span class="p">(</span><span class="n">pair</span><span class="p">,</span><span class="n">fg</span><span class="p">,</span><span class="n">bg</span><span class="p">)</span><span class="w">            </span><span class="c">! find out how a given color-pair is currently defined</span>
+<span class="w">   </span><span class="n">ierr</span><span class="o">=</span><span class="n">color_content</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span><span class="p">)</span><span class="w">          </span><span class="c">! extract red, green, and blue components in an initialized color</span>
+<span class="w">   </span><span class="n">ierr</span><span class="o">=</span><span class="n">color_content</span><span class="p">(</span><span class="n">bg</span><span class="p">,</span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span><span class="p">)</span><span class="w">          </span><span class="c">! extract red, green, and blue components in an initialized color</span>
+<span class="w">   </span><span class="k">if</span><span class="p">(</span><span class="n">fg</span><span class="o">+</span><span class="n">bg</span><span class="o">+</span><span class="n">rf</span><span class="o">+</span><span class="n">gf</span><span class="o">+</span><span class="n">bf</span><span class="o">+</span><span class="n">bg</span><span class="o">+</span><span class="n">rb</span><span class="o">+</span><span class="n">gb</span><span class="o">+</span><span class="n">bb</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="k">then</span><span class="w">     </span><span class="c">!! assume this means not defined</span>
+<span class="w">      </span><span class="n">rf</span><span class="o">=</span><span class="n">rf</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span><span class="w">   </span><span class="c">! the colors are in the range 0 to 1000 inclusive, want a two-digit hex value</span>
+<span class="w">      </span><span class="n">gf</span><span class="o">=</span><span class="n">gf</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span><span class="w"></span>
+<span class="w">      </span><span class="n">bf</span><span class="o">=</span><span class="n">bf</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span><span class="w"></span>
+<span class="w">      </span><span class="n">rb</span><span class="o">=</span><span class="n">rb</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span><span class="w"></span>
+<span class="w">      </span><span class="n">gb</span><span class="o">=</span><span class="n">gb</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span><span class="w"></span>
+<span class="w">      </span><span class="n">bb</span><span class="o">=</span><span class="n">bb</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="mi">1000</span><span class="w"></span>
+<span class="w">      </span><span class="k">write</span><span class="p">(</span><span class="n">colordef</span><span class="p">,</span><span class="s1">&#39;(&quot;.PAIR&quot;,i0,&quot;{ color: #&quot;,z2.2,z2.2,z2.2,&quot;; background-color: #&quot;,z2.2,z2.2,z2.2,&quot;; }&quot;)&#39;</span><span class="p">)</span><span class="n">pair</span><span class="p">,</span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span><span class="p">,</span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span><span class="w"></span>
+<span class="w">      </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">colordef</span><span class="w"></span>
+<span class="w">      </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="k">write</span><span class="p">(</span><span class="n">colordef</span><span class="p">,</span><span class="s1">&#39;(&quot;.RPAIR&quot;,i0,&quot;{ color: #&quot;,z2.2,z2.2,z2.2,&quot;; background-color: #&quot;,z2.2,z2.2,z2.2,&quot;; }&quot;)&#39;</span><span class="p">)</span><span class="n">pair</span><span class="p">,</span><span class="n">rb</span><span class="p">,</span><span class="n">gb</span><span class="p">,</span><span class="n">bb</span><span class="p">,</span><span class="n">rf</span><span class="p">,</span><span class="n">gf</span><span class="p">,</span><span class="n">bf</span><span class="w"></span>
+<span class="w">      </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">colordef</span><span class="w"></span>
+<span class="w">      </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">endif</span>
+<span class="k">enddo</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/style&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/head&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;body&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;pre&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">   </span><span class="k">call </span><span class="n">getmaxyx</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">my</span><span class="p">,</span><span class="n">mx</span><span class="p">)</span><span class="w">                     </span><span class="c">! size window size as defined (all of it, even if subsection being displayed)</span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">   </span><span class="n">lastclass</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="w"></span>
+<span class="w">   </span><span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">my</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
+<span class="w">      </span><span class="k">do </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">mx</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
+<span class="w">         </span><span class="k">class</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="w"></span>
+<span class="w">         </span><span class="n">cell</span><span class="o">=</span><span class="n">mvwinch</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="w">                    </span><span class="c">! retrieve cell value</span>
+<span class="w">         </span><span class="n">ilet</span><span class="o">=</span><span class="nb">iand</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span><span class="n">A_CHARTEXT</span><span class="p">)</span><span class="w">               </span><span class="c">! get decimal letter from cell using bit-mask</span>
+<span class="w">         </span><span class="n">let</span><span class="o">=</span><span class="nb">char</span><span class="p">(</span><span class="n">ilet</span><span class="p">)</span><span class="w">                           </span><span class="c">! get character from decimal</span>
+<span class="w">         </span><span class="n">lets</span><span class="o">=</span><span class="n">let</span><span class="w">                                 </span><span class="c">! what to print for the character</span>
+<span class="w">         </span><span class="n">pair</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">PAIR_NUMBER</span><span class="p">(</span><span class="n">cell</span><span class="p">),</span><span class="kt">C_INT</span><span class="p">)</span><span class="w">        </span><span class="c">! the color pair used to draw the cell</span>
+<span class="w">         </span><span class="n">attr</span><span class="o">=</span><span class="nb">iand</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span><span class="n">A_ATTRIBUTES</span><span class="p">)</span><span class="w">             </span><span class="c">!! the attributes of the cell</span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_BLINK</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="w"> </span><span class="n">A_BLINK</span><span class="p">)</span><span class="w">          </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; BL&#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_INVIS</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="w"> </span><span class="n">A_INVIS</span><span class="p">)</span><span class="w">          </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; IN&#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_NORMAL</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="w"> </span><span class="n">A_NORMAL</span><span class="p">)</span><span class="w">        </span><span class="k">class</span><span class="o">=</span><span class="k">class</span><span class="w"> </span><span class="c">!class=&#39; &#39;</span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_PROTECT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="w"> </span><span class="n">A_PROTECT</span><span class="p">)</span><span class="w">      </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_UNDERLINE</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="w"> </span><span class="n">A_UNDERLINE</span><span class="p">)</span><span class="w">  </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; U&#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_DIM</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_DIM</span><span class="p">)</span><span class="w">               </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_HORIZONTAL</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_HORIZONTAL</span><span class="p">)</span><span class="w"> </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_LEFT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_LEFT</span><span class="p">)</span><span class="w">             </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_LOW</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_LOW</span><span class="p">)</span><span class="w">               </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_RIGHT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_RIGHT</span><span class="p">)</span><span class="w">           </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_STANDOUT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_STANDOUT</span><span class="p">)</span><span class="w">     </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_TOP</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_TOP</span><span class="p">)</span><span class="w">               </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_VERTICAL</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_VERTICAL</span><span class="p">)</span><span class="w">     </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; &#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_BOLD</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_BOLD</span><span class="p">)</span><span class="w">             </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; BO&#39;</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_ITALIC</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_ITALIC</span><span class="p">)</span><span class="w">         </span><span class="k">class</span><span class="o">=</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39; I&#39;</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">         </span><span class="c">! The Alternate Character Set ( includes lines &amp; boxes)</span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_ALTCHARSET</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_ALTCHARSET</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            select case</span><span class="p">(</span><span class="n">let</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9484;&quot;</span><span class="w">   </span><span class="c">! ACS_ULCORNER upper left corner        ┌</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9492;&quot;</span><span class="w">   </span><span class="c">! ACS_LLCORNER lower left corner        └</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;k&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9488;&quot;</span><span class="w">   </span><span class="c">! ACS_URCORNER upper right corner       ┐</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;j&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9496;&quot;</span><span class="w">   </span><span class="c">! ACS_LRCORNER lower right corner       ┘</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9500;&quot;</span><span class="w">   </span><span class="c">! ACS_LTEE     tee pointing right       ├</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9508;&quot;</span><span class="w">   </span><span class="c">! ACS_RTEE     tee pointing left        ┤</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9524;&quot;</span><span class="w">   </span><span class="c">! ACS_BTEE     tee pointing up          ┴</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9516;&quot;</span><span class="w">   </span><span class="c">! ACS_TTEE     tee pointing down        ┬</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9472;&quot;</span><span class="w">   </span><span class="c">! ACS_HLINE    horizontal line          ─</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9474;&quot;</span><span class="w">   </span><span class="c">! ACS_VLINE    vertical line            !</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9532;&quot;</span><span class="w">   </span><span class="c">! ACS_PLUS     large plus or crossover  ┼</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9146;&quot;</span><span class="w">   </span><span class="c">! ACS_S1       macron, overline, scan line 1 (above) ⎺</span>
+<span class="w">               </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;macr;&quot;</span><span class="w"></span>
+<span class="w">               </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9146;&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9149;&quot;</span><span class="w">   </span><span class="c">! ACS_S9       scan line 9 (below)      ⎽</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;`&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9670;&quot;</span><span class="w">   </span><span class="c">! ACS_DIAMOND  diamond                  ◆</span>
+<span class="w">               </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;loz;&quot;</span><span class="w"></span>
+<span class="w">               </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;diams;&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#2591;&quot;</span><span class="w">   </span><span class="c">! ACS_CKBOARD  checker board (stipple)  ▒</span>
+<span class="w">               </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9618;&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;deg;&quot;</span><span class="w">     </span><span class="c">! ACS_DEGREE   degree symbol            °</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;plusmn;&quot;</span><span class="w">  </span><span class="c">! ACS_PLMINUS  plus/minus               ±</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;bull;&quot;</span><span class="w">    </span><span class="c">! ACS_BULLET   bullet                   · •</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;larr;&quot;</span><span class="w">    </span><span class="c">! ACS_LARROW   arrow pointing left      ←</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;rarr;&quot;</span><span class="w">    </span><span class="c">! ACS_RARROW   arrow pointing right     →</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;darr;&quot;</span><span class="w">    </span><span class="c">! ACS_DARROW   arrow pointing down      ↓</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;uarr;&quot;</span><span class="w">    </span><span class="c">! ACS_UARROW   arrow pointing up        ↑</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9626;&quot;</span><span class="w">   </span><span class="c">! ACS_BOARD    board of squares         ▚</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9227;&quot;</span><span class="w">   </span><span class="c">! ACS_LANTERN  lantern symbol           ␋</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;block;&quot;</span><span class="w">   </span><span class="c">! ACS_BLOCK    solid square block       █</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9147;&quot;</span><span class="w">   </span><span class="c">! ACS_S3       scan line 3(at top)      ⎻</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;#9148;&quot;</span><span class="w">   </span><span class="c">! ACS_S7       scan line 7 (at bottom)  ⎼</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;le;&quot;</span><span class="w">      </span><span class="c">! ACS_LEQUAL   less/equal               ≤</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;ge;&quot;</span><span class="w">      </span><span class="c">! ACS_GEQUAL   greater/equal            ≥</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;{&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;pi;&quot;</span><span class="w">      </span><span class="c">! ACS_PI       Pi                       π</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;ne;&quot;</span><span class="w">      </span><span class="c">! ACS_NEQUAL   not equal                ≠</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;}&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s2">&quot;&amp;pound;&quot;</span><span class="w">   </span><span class="c">! ACS_STERLING UK pound sign            £</span>
+<span class="w">            </span><span class="k">end select</span>
+<span class="k">         else</span><span class="w">                           </span><span class="c">! Regular Characters that are special in HTML</span>
+<span class="w">            </span><span class="k">select case</span><span class="p">(</span><span class="n">let</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;&amp;&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;amp;&#39;</span><span class="w">     </span><span class="c">!   &amp;  &amp;#38;  {ampersand}</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;&lt;&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;lt;&#39;</span><span class="w">      </span><span class="c">!   &lt;  &amp;#60;  {less than}</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;gt;&#39;</span><span class="w">      </span><span class="c">!   &gt;  &amp;#62;  {greater than}</span>
+<span class="w">            </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">);</span><span class="w"> </span><span class="n">lets</span><span class="o">=</span><span class="s1">&#39;&amp;quot;&#39;</span><span class="w">    </span><span class="c">!   &quot;  &amp;#34;  {quotation mark}</span>
+<span class="w">            </span><span class="c">!case(&#39; &#39;); lets=&#39;&amp;nbsp;&#39;   !      &amp;#160; {Non-breaking space}</span>
+<span class="w">            </span><span class="k">end select</span>
+<span class="k">         endif</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_REVERSE</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_REVERSE</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; RPAIR&quot;,i0)&#39;</span><span class="p">)</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span><span class="w"></span>
+<span class="w">         </span><span class="k">else</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; PAIR&quot;,i0)&#39;</span><span class="p">)</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span><span class="w"></span>
+<span class="w">         </span><span class="k">endif</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="nb">iand</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="n">A_STANDOUT</span><span class="p">).</span><span class="n">eq</span><span class="p">.</span><span class="n">A_STANDOUT</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; RPAIR&quot;,i0)&#39;</span><span class="p">)</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span><span class="w"></span>
+<span class="w">         </span><span class="k">else</span>
+<span class="k">            write</span><span class="p">(</span><span class="k">class</span><span class="p">,</span><span class="s1">&#39;(a,&quot; PAIR&quot;,i0)&#39;</span><span class="p">)</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">),</span><span class="n">pair</span><span class="w"></span>
+<span class="w">         </span><span class="k">endif</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="k">class</span><span class="p">.</span><span class="n">ne</span><span class="p">.</span><span class="n">lastclass</span><span class="p">)</span><span class="k">then</span>
+<span class="k">            if</span><span class="p">(</span><span class="n">span</span><span class="p">)</span><span class="k">then</span>
+<span class="k">               write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="w"></span>
+<span class="w">               </span><span class="n">span</span><span class="o">=</span><span class="p">.</span><span class="n">false</span><span class="p">.</span><span class="w"></span>
+<span class="w">            </span><span class="k">endif</span>
+<span class="k">            if</span><span class="p">(</span><span class="k">class</span><span class="p">.</span><span class="n">eq</span><span class="p">.</span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="k">then</span>
+<span class="k">               write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="s1">&#39;&lt;span class=&quot;N&quot;&gt;&#39;</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span>
+<span class="k">               write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="s1">&#39;&lt;span class=&quot;&#39;</span><span class="o">//</span><span class="nb">trim</span><span class="p">(</span><span class="k">class</span><span class="p">)</span><span class="o">//</span><span class="s1">&#39;&quot;&gt;&#39;</span><span class="w"></span>
+<span class="w">            </span><span class="k">endif</span>
+<span class="k">            </span><span class="n">span</span><span class="o">=</span><span class="p">.</span><span class="n">true</span><span class="p">.</span><span class="w"></span>
+<span class="w">         </span><span class="k">endif</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">         </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">lets</span><span class="p">(:</span><span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len_trim</span><span class="p">(</span><span class="n">lets</span><span class="p">)))</span><span class="w"> </span><span class="c">! print a space even if string is blank</span>
+<span class="w">         </span><span class="n">lastclass</span><span class="o">=</span><span class="k">class</span>
+<span class="k">      enddo</span>
+<span class="k">      write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">NEW_LINE</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">enddo</span><span class="w"></span>
+<span class="c">!-----------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="w">   </span><span class="k">if</span><span class="p">(</span><span class="n">span</span><span class="p">)</span><span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/span&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/body&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">call </span><span class="n">ln</span><span class="p">(</span><span class="s1">&#39;&lt;/html&gt;&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="n">endfile</span><span class="p">(</span><span class="n">unit</span><span class="o">=</span><span class="n">iout</span><span class="p">,</span><span class="n">iostat</span><span class="o">=</span><span class="n">ios</span><span class="p">,</span><span class="n">iomsg</span><span class="o">=</span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="c">! make sure file is truncated or longer old files may leave data in file</span>
+<span class="k">contains</span>
+<span class="k">subroutine </span><span class="n">ln</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">implicit none</span>
+<span class="k">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">string</span><span class="w"></span>
+<span class="w">   </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="n">string</span><span class="w"></span>
+<span class="w">   </span><span class="k">write</span><span class="p">(</span><span class="n">iout</span><span class="p">)</span><span class="nb">new_line</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="k">end subroutine </span><span class="n">ln</span><span class="w"></span>
+<span class="k">end subroutine </span><span class="n">nc_printhtml</span><span class="w"></span>
+</pre></div>
+
+    </section>
+    <br>
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              M_ncurses
+ was developed by John S. Urban<br>              &copy; 2025 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2025-07-11 00:24 +0000             </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
